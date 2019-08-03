@@ -1,5 +1,5 @@
-#Uboot功能分析
-##1以Windows系统为例，来说明电脑开机上电的流程
+# Uboot功能分析
+## 以Windows系统为例，来说明电脑开机上电的流程
 Window电脑|Linux电脑|说明/备注
 ---|:--:|---:
 启动BIOS|Boot Loader|系统的启动引导程序
