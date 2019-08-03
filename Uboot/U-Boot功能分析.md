@@ -1,4 +1,5 @@
 # Uboot功能分析
+    U-Boot，全称 Universal Boot Loader，是遵循GPL条款的开放源码项目。U-Boot的作用是系统引导.
 ## 1.以Windows系统为例，来说明电脑开机上电的流程
 Window电脑|Linux电脑|说明/备注
 ---|:--:|---:
@@ -27,3 +28,14 @@ Window电脑|Linux电脑|说明/备注
         写Flash 写网卡 写USB
     2.初始化SDRAM
     3.启动内核
+
+
+## 4.最简单的BootLoader的编写步骤
+    1.初始化硬件
+        关闭看门狗
+        设置时钟
+        设置SDRAM
+        初始化NAND FLASH
+    2.把内核从NAND FLASH 读到SDRAM
+    3.设置要传给内核的参数
+    4.跳转执行内核
